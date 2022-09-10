@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class MaxFloatNo
+    internal class MaxFloatNum
     {
         public float PrintMaximumNumber(float num1, float num2, float num3)
         {

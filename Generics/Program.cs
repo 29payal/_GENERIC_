@@ -26,7 +26,7 @@ namespace Generics
 
             //MAX FLOAT
 
-            MaxFloatNo maxFloatNo = new MaxFloatNo();
+            MaxFloatNum maxFloatNo = new MaxFloatNum();
             float d = 3.4f, e = 4.4f, f = 6.3f;
             Console.WriteLine("Maximum float value in 1st position :");
             Console.WriteLine(maxFloatNo.PrintMaximumNumber(f, d, e));
