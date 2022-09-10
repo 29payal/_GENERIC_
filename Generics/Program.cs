@@ -24,6 +24,18 @@ namespace Generics
             Console.WriteLine(maxIntegerNo.PrintMaximumNumber( a, b, c));
             Console.WriteLine("_______________________________________");
 
+            //MAX FLOAT
+
+            MaxFloatNo maxFloatNo = new MaxFloatNo();
+            float d = 3.4f, e = 4.4f, f = 6.3f;
+            Console.WriteLine("Maximum float value in 1st position :");
+            Console.WriteLine(maxFloatNo.PrintMaximumNumber(f, d, e));
+            Console.WriteLine("Maximum float value in 2nd position :");
+            Console.WriteLine(maxFloatNo.PrintMaximumNumber(d, f, e));
+            Console.WriteLine("Maximum float value in 3rd position :");
+            Console.WriteLine(maxFloatNo.PrintMaximumNumber( d, e, f));
+            Console.WriteLine("_______________________________");
+
             Console.ReadLine();
         }
     }
