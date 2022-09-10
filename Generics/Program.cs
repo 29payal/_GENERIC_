@@ -36,6 +36,17 @@ namespace Generics
             Console.WriteLine(maxFloatNo.PrintMaximumNumber( d, e, f));
             Console.WriteLine("_______________________________");
 
+            //MAX STRING
+
+            StringMax stringMax = new StringMax();
+            string Fruit1 = "Apple", Fruit2 = "Strawberry", Fruit3 = "Mango";
+            Console.WriteLine("Maximum string value in 1st position :");
+            Console.WriteLine(stringMax.PrintMaximumString(Fruit2, Fruit1, Fruit3));
+            Console.WriteLine("Maximum string value in 2nd position :");
+            Console.WriteLine(stringMax.PrintMaximumString(Fruit1, Fruit2, Fruit3));
+            Console.WriteLine("Maximum string value in 3rd position :");
+            Console.WriteLine(stringMax.PrintMaximumString(Fruit1, Fruit3, Fruit2));
+
             Console.ReadLine();
         }
     }
