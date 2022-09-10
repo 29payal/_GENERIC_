@@ -8,7 +8,7 @@ namespace Generics
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generics:");
 
@@ -46,6 +46,25 @@ namespace Generics
             Console.WriteLine(stringMax.PrintMaximumString(Fruit1, Fruit2, Fruit3));
             Console.WriteLine("Maximum string value in 3rd position :");
             Console.WriteLine(stringMax.PrintMaximumString(Fruit1, Fruit3, Fruit2));
+            Console.WriteLine("______________________________");
+
+            //Generic Method for Integer
+
+            Refactor refactor = new Refactor();
+            int val = refactor.PrintMaximum<int>(a, b, c);
+            Console.WriteLine("Maximum integer number by using generic : " +val);
+            Console.WriteLine("_______________________");
+
+            //Generic Method for Float
+
+            float result = refactor.PrintMaximum<float>(d, e, f);
+            Console.WriteLine("Maximum float number by using generic :" +result);
+            Console.WriteLine("___________________________");
+
+            //Generic Method for String
+
+            string NAME = refactor.PrintMaximum<string>(Fruit1, Fruit2, Fruit3);
+            Console.WriteLine("Maximum string name by using generic :" +NAME);
 
             Console.ReadLine();
         }
